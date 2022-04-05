@@ -1,5 +1,4 @@
-from tkinter import W
-from turtle import backward, forward, left, right
+
 import pygame
 import math
 import sys
