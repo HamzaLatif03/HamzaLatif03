@@ -183,18 +183,14 @@ while True:
     def blank(self):
         while Bullet.CanShoot == False and keys[pygame.K_w]:
             pygame.mixer.Sound.play(click)
-
-    #def draw(self,win):
-    #    pygame.draw.rect(bg, (255, 255, 255), [self.x, self.y, self.w, self.h])
-##        screen.blit(self.rotatedSurf,
 '''
 
 #bullet = Bullet()
 playerBullets=[]
 
-# Objects = pygame.sprite.Group()
-# Objects.add(player)
-# Objects.add(bullet)
+#Objects = pygame.sprite.Group()
+#Objects.add(player)
+#Objects.add(bullet)
 
 
 
@@ -208,7 +204,7 @@ def game():
     def redraw_screen():
         main_font = pygame.font.SysFont("comicsans", 50)
         screen.blit(bg, (0, 0))
-        # Objects.draw(screen)
+        #Objects.draw(screen)
         health_view = main_font.render(f"Health: {health}", 1,(0,255,0))
         score_view = main_font.render(f"Health: {score}", 1,(0,255,0))
         screen.blit(health_view, (20, sw-20))
@@ -306,9 +302,9 @@ while True:
             Inputs(event)
             
         #if event.type == pygame.MOUSEBUTTONDOWN:
-         #   playGame.CheckForInput(mou)
-          #  if event.type == playGame:
-           #     playGame.update
+         #playGame.CheckForInput(mou)
+          #if event.type == playGame:
+           #playGame.update
 
 
     screen.blit(picture_bg, (0, 0))
@@ -395,6 +391,3 @@ if asteroidsTimer >= 1:
 
 
 '''
-#nice = pygame.transform.scale(nice, (100,100))
-# good size for my asteroids in the game
-# random.randint(n1, n2) can be used for asteroids to be random sizes with set limits
